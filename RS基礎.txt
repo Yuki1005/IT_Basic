@@ -94,4 +94,4 @@ Cisco IOS
 		　　　(config-if)＃no shutdown
 		　　　(config-if)＃end
 		設定後：interface Vlan1     [address]
-				
+	
