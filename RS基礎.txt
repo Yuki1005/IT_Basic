@@ -51,6 +51,8 @@ Cisco IOS
 		＃reload：リロード
 		Pgup(↑)：もう一度上と同じコマンド、押した数上に行く
 
+
+
 2.Switchの起動と基本設定(P.36)
 	Catalyst：Cisco
 	モジュール型スイッチ：必要に応じて各種モジュールを組み合わせる、ポート増設など
@@ -66,6 +68,7 @@ Cisco IOS
 	　　　　　　　　　FastEthernet：100Mbps、GigabitEthernet：1Gbps
 			インターフェースの状態の詳細表示
 				＃show interfaces GigabitEthernet1/0/1(sh int gi1/0/1)：左上のポートの状態把握
+				(ポート番号は逆Nの字に数字が大きくなる）
 				② down：ケーブルがつながっていない、up：つながっている
 				③ Full：全二重、Half：半二重
 				⑤ 対応速度
