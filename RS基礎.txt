@@ -51,7 +51,7 @@ Cisco IOS
 		＃erase startup-config(write erase)：設定を消去
 		＃reload：リロード
 		Pgup(↑)：もう一度上と同じコマンド、押した数上に行く
-
+		(config)＃do [実行文]：(config)＃の時に＃を実行したいとき
 
 
 2.Switchの起動と基本設定(P.36)
@@ -106,9 +106,10 @@ Cisco IOS
 	ISR：Ciscoの一般企業向けルータ製品のシリーズ名
 	   　モジュールの追加による機能拡張に対応、様々な機能を1台のルータに統合可能
 	スロット番号/ポート番号：スロット番号は固定スイッチの場合0になる
-	　　　　　　 　　　　　　ポート番号はRouterの場合は0からはじまる
+	　　　　　　 　　　　　　ポート番号はRouterの場合は　0　からはじまる
 	　　　　　　 　　　　　　Switch：GigabitEthernet1/0/1、Router：GigabitEthernet0/0/0
 	　　　　　　 　　　　　　3つの場合(1/0/1)：ユニット番号/スロット番号/ポート番号
+				ユニット番号はRouterの場合は　0　になる
 	インターフェースの二重モードや速度設定と確認(P.65)：
 		Switch　半二重（固定）、100Mbps（固定）
 		Router　全二重（固定）、1000Mbps（固定）
