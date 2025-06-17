@@ -1,11 +1,22 @@
+テスト出る
+	1.5 コンフィギュレーション（設定）の保存と初期化
+		IOSではstart-configとrunning-configという2つのコンフィギュレーション
+		ファイルを使い分けて設定情報を管理
+		startup-config：ルータ　NBRAM
+		              　スイッチ フラッシュメモリなどの不揮発性メモリ
+			      　自動的に書き込まれる
+		running-config：電源を落とすと消去される
+
+
 Cisco IOS
-	コンソールケーブル　	RJ45 D-Sub9pin(メス) to LAN
-	USB変換ケーブル	　　 	RJ45 D-Sub9pin(オス) to USB-A
-	VTY(vitual teletype)：LANケーブル経由でほかの機器を踏み台にして直接接続していない機器を使用する方法
+	コンソールケーブル　	D-Sub9pin(メス) to LAN(RJ45)
+	USB変換ケーブル	　　 	D-Sub9pin(オス) to USB-A
+	vty(vitual teletype)：LANケーブル経由でほかの機器を踏み台にして
+	                    　直接接続していない機器を使用する方法
 	IOS：CiscoのOS、CLIのOSのためキーボードからcmdを入力することで操作を行う
 
 	
-tera term
+1.tera term
 	ctrl + c、ctrl + vは使えない。貼り付けは右クリック
 	大きいほう（スイッチ）：裏の上に端子を
 	小さいほう（ルータ）：表の緑に端子を
@@ -27,13 +38,51 @@ tera term
 		　　disable(exit)で＞へ
 		(config)＃：＃configure terminal(＃conf t)より
 		　　　　　　グローバルコンフィギュレーションモードへ
-		　　　　　　exitで＃へ
-		(config)＃show running-config：ランタイムメモリー上にある現在の設定内容
-		　　　　　　　　　　　　　　　　　（ランニングコンフィグ）を表示する。 
-		　　　　　　　　　　　　　　　　　write terminalコマンドとほぼ同じ。
-		　　　　　　　　　　　Moreが出た場合、Spaceで次の情報
+		　　　　　　exit(ctrl + z)で＃へ
+		ter len 0：show 
+		＃show running-config(show run)：ランタイムメモリー上にある現在の設定内容（ランニングコンフィグ）を表示する。 
+		　　　　　　　　　　　　　　　　　  write terminalコマンドとほぼ同じ。
+		　　　　　　　　　　　	         Moreが出た場合、Spaceで次の情報
 		(config)＃hostname name：SwitchやRouterの名前が変更出来たらOK
-		　　　　　　　　　＃no hostnameでデフォルトに戻る
+		　　　　　　　　　        ＃no hostnameでデフォルトに戻る
 		＃show ?：特定コマンドのヘルプを表示、分からなかったらひとまずコレ
+		＃copy running-config startup-config(write memory)：設定を保存
+		＃erase startup-config(write erase)：設定を消去
+		＃reload：リロード
+		Pgup(↑)：もう一度上と同じコマンド、押した数上に行く
 
-		
+2.Switchの起動と基本設定(P.36)
+	Catalyst：Cisco
+	モジュール型スイッチ：必要に応じて各種モジュールを組み合わせる、ポート増設など
+	　　　　　　　　　　　自由度は高いが高価
+	固定型スイッチ：シャーシにモジュールが固定されている
+	　　　　　　　　自由度は高くないが安価
+	RPSコネクタ：冗長電源システム、今回の機器に実装なし
+	ダウンリンクポート：下位の機器（機器のヒエラルキー図）につなぐポート
+	アップリンクポート：上位の機器につなぐポート、物理的にはダウンリンクと同じもの
+
+	インターフェース：異なるシステムやコンポーネントの間で情報をやり取りするための
+	　　　　　　　　　接点や境界のこと
+	　　　　　　　　　FastEthernet：100Mbps、GigabitEthernet：1Gbps
+			インターフェースの状態の詳細表示
+				＃show interfaces GigabitEthernet1/0/1(sh int gi1/0/1)：左上のポートの状態把握
+				② down：ケーブルがつながっていない、up：つながっている
+				③ Full：全二重、Half：半二重
+				⑤ 対応速度
+				⑦ 5分間平均で受信したデータ量、input：受信、output：送信
+				⑧ 破棄されるとカウントが増える、0が正常、⑨も同じ
+			インターフェースの状態の一覧表示	
+				＃show interfaces stasus(＃sh int stasus)
+				Status：connected、notconnect
+				Vlan：どのVLANに接続しているか
+				Type：通信速度がどれに対応しているか
+			二重モードの設定と状態の確認
+				＃interface GigabitEthernet1/0/1(int gi1/0/1)
+				(config-if)＃duplex full
+				(config-if)＃speed 1000 
+					Duplex：a-full(AutoNegotiationによりfull)
+				      　        full(固定設定によりfull)
+					Speed：a-1000(AutoNegotiationにより1000Mbps)
+				     　        1000(固定設定により1000Mbps)
+				     　
+				
