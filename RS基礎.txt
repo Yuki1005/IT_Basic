@@ -28,11 +28,12 @@ tera term
 		(config)＃：＃configure terminal(＃conf t)より
 		　　　　　　グローバルコンフィギュレーションモードへ
 		　　　　　　exitで＃へ
-		＃show running-config：ランタイムメモリー上にある現在の設定内容
-		　　　　　　　　　　　（ランニングコンフィグ）を表示する。 
-		　　　　　　　　　　　write terminalコマンドとほぼ同じ。
+		(config)＃show running-config：ランタイムメモリー上にある現在の設定内容
+		　　　　　　　　　　　　　　　　　（ランニングコンフィグ）を表示する。 
+		　　　　　　　　　　　　　　　　　write terminalコマンドとほぼ同じ。
 		　　　　　　　　　　　Moreが出た場合、Spaceで次の情報
-		＃hostname name：SwitchやRouterの名前が変更出来たらOK
+		(config)＃hostname name：SwitchやRouterの名前が変更出来たらOK
 		　　　　　　　　　＃no hostnameでデフォルトに戻る
+		＃show ?：特定コマンドのヘルプを表示、分からなかったらひとまずコレ
 
 		
