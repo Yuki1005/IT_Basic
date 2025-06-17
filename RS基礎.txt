@@ -32,5 +32,7 @@ tera term
 		　　　　　　　　　　　（ランニングコンフィグ）を表示する。 
 		　　　　　　　　　　　write terminalコマンドとほぼ同じ。
 		　　　　　　　　　　　Moreが出た場合、Spaceで次の情報
-		
+		＃hostname name：SwitchやRouterの名前が変更出来たらOK
+		　　　　　　　　　＃no hostnameでデフォルトに戻る
+
 		
