@@ -2,11 +2,11 @@
 	1.5 コンフィギュレーション（設定）の保存と初期化
 		IOSではstart-configとrunning-configという2つのコンフィギュレーション
 		ファイルを使い分けて設定情報を管理
-		startup-config：ルータ　NBRAM
-		              　スイッチ フラッシュメモリなどの不揮発性メモリ
-			      　自動的に書き込まれる
+		startup-config：Router　NBRAM
+		              　Switch　フラッシュメモリなどの不揮発性メモリ
+			      　電源をつけると自動的に読み込まれる
 		running-config：電源を落とすと消去される
-
+		              　
 
 Cisco IOS
 	コンソールケーブル　	D-Sub9pin(メス) to LAN(RJ45)
@@ -18,15 +18,16 @@ Cisco IOS
 	
 1.tera term
 	ctrl + c、ctrl + vは使えない。貼り付けは右クリック
-	大きいほう（スイッチ）：裏の上に端子を
-	小さいほう（ルータ）：表の緑に端子を
+	大きいほう（Switch）：裏の上に端子を
+	小さいほう（Router）：表の緑に端子を
 	tera termを起動	
 		シリアルを選択しOK
-		ルータの場合はコードが出る：NO（セットアップモードは使用しないため）
+		Routerの場合：
+			コードが出る：NO（セットアップモードは使用しないため）
 			passwordが出てきた場合、Uniadex123
 			ルータ：0
 			走るのが止まったらEnter：Router> が出たらOK
-		スイッチの場合：
+		Switchの場合：
 			Enter：Switch> が出たらOK
 		
 		tera termの設定
@@ -89,12 +90,22 @@ Cisco IOS
 				     　        1000(固定設定により1000Mbps)
 
 	IPアドレスとデフォルトゲートウェイの設定
-		LAN経由でスイッチにTelnetやSSHで接続することができる
+		LAN経由でSwitchにTelnetやSSHで接続することができる
 		interface Vlan1　は　#sh run　で確認する、space押し続けて下のほう
 		設定前：interface Vlan1     no ip address
 		設定：(config)＃int vlan 1
-		　　　(config-if)＃ip address [address]
+		　　　(config-if)＃ip address [ip-address] [subnet-mask]
 		　　　(config-if)＃no shutdown
 		　　　(config-if)＃end
-		設定後：interface Vlan1     [address]
+		設定後：interface Vlan1     [address] [subnet-mask]（設定したアドレス）
+
+
+
+3.Routerの起動と基本設定
+	ISR：Ciscoの一般企業向けルータ製品のシリーズ名
+	   　モジュールの追加による機能拡張に対応、様々な機能を1台のルータに統合可能
+	スロット番号/ポート番号：スロット番号は固定スイッチの場合0になる
+	　　　　　　 　　　　　　ポート番号はRouterの場合は0からはじまる
+	　　　　　　 　　　　　　Switch：GigabitEthernet1/0/1、Router：GigabitEthernet0/0/0
+	　　　　　　 　　　　　　3つの場合(1/0/1)：ユニット番号/スロット番号/ポート番号
 	
