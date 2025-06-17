@@ -84,5 +84,10 @@ Cisco IOS
 				      　        full(固定設定によりfull)
 					Speed：a-1000(AutoNegotiationにより1000Mbps)
 				     　        1000(固定設定により1000Mbps)
-				     　
+
+	IPアドレスとデフォルトゲートウェイの設定
+		LAN経由でスイッチにTelnetやSSHで接続することができる
+		設定前：interface Vlan1     no ip address
+		設定：ip address [address]
+		設定後：interface Vlan1     [address]
 				
