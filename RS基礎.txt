@@ -87,7 +87,11 @@ Cisco IOS
 
 	IPアドレスとデフォルトゲートウェイの設定
 		LAN経由でスイッチにTelnetやSSHで接続することができる
+		interface Vlan1　は　#sh run　で確認する、space押し続けて下のほう
 		設定前：interface Vlan1     no ip address
-		設定：ip address [address]
+		設定：(config)＃int vlan 1
+		　　　(config-if)＃ip address [address]
+		　　　(config-if)＃no shutdown
+		　　　(config-if)＃end
 		設定後：interface Vlan1     [address]
 				
