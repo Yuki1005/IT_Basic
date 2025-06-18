@@ -40,6 +40,7 @@ Cisco IOS
 		(config)＃：＃configure terminal(＃conf t)より
 		　　　　　　グローバルコンフィギュレーションモードへ
 		　　　　　　exit(ctrl + z)で＃へ
+		(config-if)＃：(config)＃int gi1/0/1よりインターフェースコンフィギュレーションモードに移行
 		ter len 0：show 
 		＃show running-config(show run)：ランタイムメモリー上にある現在の設定内容（ランニングコンフィグ）を表示する。 
 		　　　　　　　　　　　　　　　　　  write terminalコマンドとほぼ同じ。
@@ -50,6 +51,7 @@ Cisco IOS
 		＃copy running-config startup-config(write memory)：設定を保存
 		＃erase startup-config(write erase)：設定を消去
 		＃reload：リロード
+		＃erase startup-config：初期化
 		Pgup(↑)：もう一度上と同じコマンド、押した数上に行く
 		(config)＃do [実行文]：(config)＃の時に＃を実行したいとき
 
