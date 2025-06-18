@@ -11,7 +11,7 @@
 Cisco IOS
 	コンソールケーブル　	D-Sub9pin(メス) to LAN(RJ45)
 	USB変換ケーブル	　　 	D-Sub9pin(オス) to USB-A
-	vty(vitual teletype)：LANケーブル経由でほかの機器を踏み台にして
+	vty(virtual teletype)：LANケーブル経由でほかの機器を踏み台にして
 	                    　直接接続していない機器を使用する方法
 	IOS：CiscoのOS、CLIのOSのためキーボードからcmdを入力することで操作を行う
 
