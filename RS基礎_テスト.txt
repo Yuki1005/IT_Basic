@@ -1,0 +1,30 @@
+L2スイッチの主な役割
+  MACアドレスに基づいたフレーム転送
+
+保存している設定から一部設定変更を行った場合、変更後の設定を確認するコマンド
+	show running-config
+
+手動でSwitchのGi1/0/1の通信速度を100Mbps、通信方式を全二重にするには
+	(config-if)＃duplex full
+	(config-if)＃speed 100
+
+Router再起動時読み込まれる設定
+	show startup-config
+
+RAMにある現在の設定をNVRAMに保存する方法
+	copy running-config startup-config
+	write memory
+
+インターフェースコンフィグレーションモードへの移行するコマンド
+	(config)＃interface GigabitEthernet 0
+	(config)＃int gi0
+
+L2スイッチにデフォルトゲートウェイを設定するコマンド
+	(config)＃ip default-gateway [default-gateway]
+
+show mac address-tableの表示について
+	TypeにStaticと表示があるのは管理者がMACアドレステーブルを手動で登録した情報
+	TypeにStaticと表示があるのはスイッチのフレーム処理のためにスイッチにもともと登録されている情報
+
+Routerの初期化
+	＃erase startup-config
