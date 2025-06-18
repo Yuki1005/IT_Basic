@@ -109,7 +109,7 @@ Cisco IOS
 	　　　　　　 　　　　　　ポート番号はRouterの場合は　0　からはじまる
 	　　　　　　 　　　　　　Switch：GigabitEthernet1/0/1、Router：GigabitEthernet0/0/0
 	　　　　　　 　　　　　　3つの場合(1/0/1)：ユニット番号/スロット番号/ポート番号
-				ユニット番号はRouterの場合は　0　になる
+						ユニット番号はRouterの場合は　0　になる
 	インターフェースの二重モードや速度設定と確認(P.65)：
 		Switch　半二重（固定）、100Mbps（固定）
 		Router　全二重（固定）、1000Mbps（固定）
