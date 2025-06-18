@@ -155,7 +155,7 @@ Cisco IOS
 			(config)＃line con 0
 			(config-line)＃login local
 			(config-line)＃end
-	特権モード（＃）パスワード：
+	特権モード（＃）：
 		両方設定した場合enable secretが優先される
 		enable(非暗号化)：show runをしたときPassが出力される
 	　	　　　　        　(config)＃enable password [password]
@@ -163,10 +163,47 @@ Cisco IOS
 		enable-secret(暗号化)：show runをした時も見えない
 		              　　　　 (config)＃enable secret [password]
 		　　　　               消去：(config)＃no enable secret
-
+	Telnetサーバ(vty)：
+		Telnet、SSHとvty(仮想端末)回線の概要：
+			sh run | section line vty
+		Password認証によるTelnet接続の有効化と確認：
+			(config)＃line vty 0 15
+			(config-line)＃password [password]
+			(config-line)＃login
+			(config-line)＃end
+		UsernameとPasswordのlocal認証によるTelnet接続の有効化と確認：
+			(config-line)＃login local
+			(config-line)＃end
+	
 
 
 5.設定管理
 	セッションタイムアウト：管理接続中に何も入力がない状態が続くと自動的にログアウトする時間をexec-timeoutで設定
 	　　　　　　　　　　　　(config-line)＃exec-timeout 10 30(min sec)：デフォルトは10分
 	　　　　　　　　　　　　(config-line)＃exec-timeout 0 0(no exec-timeout)：タイムアウトの無効化
+	log表示と確認：
+		console：
+			(config)＃logging console
+			emergencies	0	システムが不安定
+			alerts		1	ただちに対処が必要な状態
+			critical	2	クリティカルな状態
+			errors		3	エラー
+			warnings	4	警告
+			notfications	5	正常だが注意を要する
+			informational	6	通知メッセージ（デフォ）
+			debugging	7	デバックメッセージ
+		vty：
+			＞terminal monitor
+			＃terminal monitor
+		内部Bufferにlogを保持しあとから表示：
+			(config)＃logging buffered：logging-bufferを有効化
+			(config)＃no logging buffered：logging-bufferを無効化
+			(config)＃logging buffered 8192：サイズを8192Byteに設定
+			sh logging：log確認
+	log割込み表示対策：
+		(config-line)＃logging synchronous
+		(config-line)＃end
+	DNSクライアント機能の有効化：
+		
+	
+		
