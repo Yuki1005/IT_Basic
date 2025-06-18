@@ -64,18 +64,18 @@
 
 ## よく使うコマンド
 
-- `show running-config`：現在の設定確認
-- `copy running-config startup-config`：設定を保存
-- `erase startup-config`：初期化
-- `reload`：再起動
-- `hostname [name]`：デバイス名変更
-- `no hostname`：初期名に戻す
-- `show ?`：コマンドヘルプ
-- `do [コマンド]`：設定モードでも実行可能
+- `#show running-config`：現在の設定確認
+- `#copy running-config startup-config`：設定を保存
+- `#erase startup-config`：初期化
+- `#reload`：再起動
+- `(config)#hostname [name]`：デバイス名変更
+- `(config)#no hostname`：初期名に戻す
+- `#show ?`：コマンドヘルプ
+- `(config)#do [コマンド]`：設定モードでも実行可能
 
 ---
 
-## 2. Switchの起動と基本設定
+## 2. Switchの起動と基本設定（P.36)
 
 - **モジュール型スイッチ**：
   - 自由度は高いが高価
@@ -90,5 +90,4 @@
   - 機器のヒエラルキーから下位の機器につなぐか上位の機器につなぐかの違い
 ### MACアドレステーブル確認
 
-```sh
-# show mac address-table
+- `#show mac address-table`
