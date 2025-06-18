@@ -32,3 +32,48 @@ show mac address-tableの表示について
 
 Routerの初期化
 	＃erase startup-config
+
+
+
+
+
+
+
+
+ルータからある宛先までの通信経路において、障害が起きている地点を調べる
+	traceroute
+
+	tracert：PC上でｃｍｄから
+	ping：特定の機器に意思疎通できるか
+	show int：インターフェースの状態
+	show ip route：ルーティングテーブルの確認
+
+デバッグの実行についての注意点
+	デバッグは必要なときに必要な項目だけを対象に実行するようにする。
+
+	debug allは負荷がすごい
+
+(config)#clock timezone JST 9　の動作
+	タイムゾーンの設定
+
+特定の設定のみを削除
+	設定cmdの前に「no」
+
+pingコマンドを使用して通信確認を行う際、使用されるパケット
+	エコー要求、エコー応答
+
+Telnet/SSH接続で自動的なログアウトを無効化にするコマンド
+	(config-line)#exec-timeout 0 0
+
+(config-if)#description connected to CatA　の動作
+	管理用の説明文を付けている
+
+	ログイン時に表示するメッセージ	bannered 
+IOSによるvty接続の管理を行う際、「中断しているセッションの終了」を行うコマンド
+	disconnect[セッション番号]
+
+(config-line)#logging synchronous　で有効になる管理機能
+	コマンド入力中のログの割り込み表示対策
+
+マンドをタイプミスしても待ち時間が発生しないようにする適切なコマンド
+	(config)#no ip domain-lookup
