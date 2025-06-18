@@ -146,14 +146,22 @@ Cisco IOS
 			(config-line)＃login：パスワードを確定
 			(config-line)＃end
 		Password消去：
-			(config)＃line con 0
 			(config-line)＃no password
 		Password認証の無効化：
-			(config)＃line con 0
 			(config-line)＃password [password]
 			(config-line)＃no login
-			
-	vtyパスワード：
+		UsernameとPasswordによる認証設定：
+			(config)＃username [username] password [password]
+			(config)＃line con 0
+			(config-line)＃login local
+			(config-line)＃end
 	特権モード（＃）パスワード：
-	
+		両方設定した場合enable secretが優先される
+		enable(非暗号化)：show runをしたときPassが出力される
+	　	　　　　        　(config)＃enable password [
+password]
+		　　　　　        消去：(config)＃no enable password
+		enable-secret(暗号化)：show runをした時も見えない
+		              　　　　 (config)＃enable secret [password]
+		　　　　               消去：(config)＃no enable secret
 
