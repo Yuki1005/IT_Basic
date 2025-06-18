@@ -205,5 +205,11 @@ Cisco IOS
 		(config-line)＃end
 	DNSクライアント機能の有効化：
 		(config-line)＃no ip domain-lookup：誤ったcmdを売った場合の名前解決を無効化し無駄なDNSクリエを実行しない。待ち時間が無くなる
-	
+	IOSのping cmd：
+		!	ping成功
+		.	timeout
+		U	宛先到達不能
+		Q	宛先がビジー状態（塞がっている）
+		?	パケットタイム不明
+		&	
 		
