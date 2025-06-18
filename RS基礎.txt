@@ -93,7 +93,7 @@ Cisco IOS
 					Speed：a-1000(AutoNegotiationにより1000Mbps)
 				     　        1000(固定設定により1000Mbps)
 
-	IPアドレスとデフォルトゲートウェイの設定
+	IPアドレスの設定
 		LAN経由でSwitchにTelnetやSSHで接続することができる
 		interface Vlan1　は　#sh run　で確認する、space押し続けて下のほう
 		設定前：interface Vlan1     no ip address
@@ -102,6 +102,12 @@ Cisco IOS
 		　　　(config-if)＃no shutdown
 		　　　(config-if)＃end
 		設定後：interface Vlan1     [address] [subnet-mask]（設定したアドレス）
+	デフォルトゲートウェイの設定
+		(config)＃ip default-gateway [default-gateway]
+		
+	ip-address が 192.168.1.1/24 ならば 
+		subnet-mask は 255.255.255.0/24
+		default-gateway は 192.168.1.254
 
 
 
