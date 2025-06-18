@@ -164,3 +164,9 @@ Cisco IOS
 		              　　　　 (config)＃enable secret [password]
 		　　　　               消去：(config)＃no enable secret
 
+
+
+5.設定管理
+	セッションタイムアウト：管理接続中に何も入力がない状態が続くと自動的にログアウトする時間をexec-timeoutで設定
+	　　　　　　　　　　　　(config-line)＃exec-timeout 10 30(min sec)：デフォルトは10分
+	　　　　　　　　　　　　(config-line)＃exec-timeout 0 0(no exec-timeout)：タイムアウトの無効化
