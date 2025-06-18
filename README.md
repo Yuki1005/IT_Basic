@@ -61,7 +61,7 @@
 | ユーザEXECモード           | `>`        |  `>enable`/`>en`より特権モードへ   |
 | 特権EXECモード             | `#`        | `#configure terminal`/`conf t`よりグローバルコンフィジュレーションモードへ   |
 | グローバルコンフィギュレーションモード | `(config)#`|　`(config)＃int gi1/0/1`よりインターフェースコンフィギュレーションモードへ |
-| インターフェースコンフィギュレーションモード     | `(config-if)#` | ポートごとの設定               |
+| インターフェースコンフィギュレーションモード     | `(config-if)#` | `(config-of)#end`にて離脱              |
 
 ---
 
@@ -71,10 +71,10 @@
 - `#copy running-config startup-config`：設定を保存
 - `#erase startup-config`：初期化
 - `#reload`：再起動
-- `(config)#hostname [name]`：デバイス名変更
-- `(config)#no hostname`：初期名に戻す
 - `#show ?`：コマンドヘルプ
-- `(config)#do [コマンド]`：設定モードでも実行可能
+- `(config)#hostname [name]`：デバイス名変更、`(config)#no hostname`でデフォルトに戻す
+- `(config)#do [コマンド]`：特権モードに戻らなくても実行可能
+- Pgup(キーボードの ↑ ）：もう一度上と同じコマンド、押した数上に行く
 
 ---
 
