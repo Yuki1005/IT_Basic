@@ -67,9 +67,9 @@
 
 ## よく使うコマンド
 
-- `#show running-config`：現在の設定確認
-- `#copy running-config startup-config`：設定を保存
-- `#erase startup-config`：初期化
+- `#show running-config`/`#show run`：現在の設定確認
+- `#copy running-config startup-config`/`#write memory`：設定を保存
+- `#erase startup-config`/`#write erase`：初期化
 - `#reload`：再起動
 - `#show ?`：コマンドヘルプ
 - `(config)#hostname [name]`：デバイス名変更、`(config)#no hostname`でデフォルトに戻す
@@ -79,7 +79,7 @@
 ---
 
 ## 2. Switchの起動と基本設定（P.36)
-
+- **Catalyst：Ciscoのネットワークスイッチ**  
 - **モジュール型スイッチ**：
   - 自由度は高いが高価
   - 必要に追うおじて各種モジュールを組み合わせられる
@@ -93,7 +93,7 @@
   - 機器のヒエラルキーから下位の機器につなぐか上位の機器につなぐかの違い
 ### MACアドレステーブル確認
 
-- `#show mac address-table`
+- `#show mac address-table`：
 
 ---
 
