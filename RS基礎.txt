@@ -137,4 +137,23 @@ Cisco IOS
 	
 		
 	
-4.
+4.セキュリティ設定
+	IOSでは、コンソールアクセス時やvtyアクセス時、＃移行時などにPassを要求するように構成することができる
+	コンソール：
+		password設定と認証機能の有効化：
+			(config)＃line console 0((config)＃line con 0)
+			(config-line)＃password [password]
+			(config-line)＃login：パスワードを確定
+			(config-line)＃end
+		password消去：
+			(config)＃line con 0
+			(config-line)＃no password
+		password認証の無効化：
+			(config)＃line con 0
+			(config-line)＃password [password]
+			(config-line)＃no login
+			
+	vtyパスワード：
+	特権モード（＃）パスワード：
+	
+
