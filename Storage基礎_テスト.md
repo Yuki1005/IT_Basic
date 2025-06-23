@@ -1,3 +1,15 @@
+[1. 演習1](#anchor1)
+
+[2. 演習2](#anchor2)
+
+[3. 演習3](#anchor3)
+
+[4. 演習4](#anchor4)
+
+[5. 演習5](#anchor5)
+
+
+<a id="anchor1"></a>
 ## 1. 演習1_Basic
 - 高速なHDDの種類
   - SAS-HDD
@@ -39,7 +51,7 @@
     
 ---
 
-
+<a id="anchor2"></a>
 ## 2. 演習2_Basic
 
 - RAID6は何本の障害に対応
@@ -79,9 +91,10 @@
 
 ## 2.2 演習2_Advance
 
+- 
 
 ---
-
+<a id="anchor3"></a>
 ## 3. 演習3_Basic
 
 - HDDよりテープが優れている点
@@ -110,7 +123,7 @@
 - VTLを使用し仮想上のテープドライブにバックアップを行う
 
 ---
-
+<a id="anchor4"></a>
 ## 4. 演習4_Basic
 - SANは何を共有するためのネットワーク
   - 複数のServerでStorageを共有
@@ -145,7 +158,7 @@
 
 
 ---
-
+<a id="ancho5"></a>
 ## 5. 演習5_Basic
 - NASはLANに接続された何を提供するStorage
   - ファイル共有
