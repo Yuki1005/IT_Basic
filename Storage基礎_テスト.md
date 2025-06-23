@@ -162,7 +162,7 @@
 
 
 ---
-<a id="ancho5"></a>
+<a id="anchor5"></a>
 ## 5. 演習5_Basic
 - NASはLANに接続された何を提供するStorage
   - ファイル共有
