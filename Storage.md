@@ -55,7 +55,14 @@
 
 ### 実体
 - OS(ほとんどがCustomizeLinux、Windows)とCPU、メモリ、HDDで動く　->　Serverと同じ
- - StorageはServerをベースに最適化したもの
- - Storage処理に特化したHWで構築される
+  - StorageはServerをベースに最適化したもの
+  - Storage処理に特化したHWで構築される
 
+#### 用途別
+
+| 名                   | 特徴                       | 
+|----------------------------|------------|
+| ブロックStorage      | 内蔵ディスクと同じ感覚で使用可能       |
+| ファイルStorage             | HDD等        | 
+| オブジェクトStorage          | HDD等        |
 ---
