@@ -242,7 +242,9 @@ SSDはランダムアクセスも得意
   - 輸送レート：400Mbps（最大圧縮時1000Mbps)
   - 価格：¥30000程度
 
-- メディア
+---
+
+### メディア
   - テープ内のデータ開始点, 終了点はBOT, EOTで判別
     - BOT：Beginning of tape
     - EOT：End of tape
