@@ -1,5 +1,7 @@
 # Storage基礎
 
+1. Storage概要(#anchor1)
+
 ## 担当
 ---
 **野田さん**
@@ -16,7 +18,7 @@
  - HDDとSSDの違いについて理解する
 
 ---
-
+<a id="anchor1"></a>
 ## 1. Storage概要
 
 ### Storageとは
