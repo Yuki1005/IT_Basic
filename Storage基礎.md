@@ -393,6 +393,8 @@ SSDはランダムアクセスも得意
 - ブロックStorage
 - DAS：ServerとStorageが直接接続されるStorage（Direct Attached Storage）
 - SAN：Storage専用のネットワーク経由で接続するStorage（Storage Area Network)
+- FCの長距離転送はIP変換(FCIP：Fibre Channel over IP)にて実現
+  - FCは距離制限があるので、長距離はIP変換してイーサネットを利用
 
 |  | SAN | DAS|
 |-----|-------------|------|
@@ -431,3 +433,25 @@ SSDはランダムアクセスも得意
 |送信順序|順序順守(相手からの応答を待ってから送信) -> Storage相性◎|送信順序無視|
 |距離|最長50km(長距離はFCIP）｜無制限(パフォーマンスに関しては別途考慮）|
 |導入コスト| 高| 中|
+
+
+- FCスイッチの各ポートはSFPをさすことで使用可能
+  - SFP：Small form-factor pluggable)
+  - 光信号 <-> デジタル信号に変換　->　Server/Storageはデジタル信号のみ理解可能なため
+  - Server/StorageにもSFPが使用される
+  - 光信号は繊細なのでSFP, FCケーブルはほこりや汚れに注意
+
+- ゾーニング
+  - FCスイッチは経路を設定するためにゾーニングを設定
+  - LANスイッチで言うところVLAN
+  - 複数のServer/Storageを接続するので全部が全部接続されると困る
+  - ポートによるゾーニングとWWNによるゾーニングが可能
+ 
+- WWNとIQN
+  - WWN：World wide name
+  - IQN：iSCSI qualified name
+  - 識別子
+  - 世界中で同じものは存在しない
+
+  
+---
