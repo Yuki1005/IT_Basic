@@ -391,6 +391,9 @@ SSDはランダムアクセスも得意
 ### NAS
 - NAS(Network Attacked Storage)：ネットワーク経由で接続するStorage
 - NAS専用のOS上でファイルを共有設定を行い、ClientPCからネットワーク経由でアクセス
+- ファイル共有用プロトコルで会話
+  - Linux/Unix = `NFS`
+  - Windows = `CIFS(SMB)`
 
 |メリット|`既存のLANを利用するので低コストで導入`|
 |-----|-------|
