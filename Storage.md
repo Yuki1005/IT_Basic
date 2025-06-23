@@ -9,9 +9,15 @@
  - PureStorage製品の主管業務
 ---
 
-## 1. Tera Term 操作
+## 到達目標
+ - システムにおけるStorageが持つ役割を理解する
+ - Storageの構成要素について理解する
+ - Storageの接続形態(DAS、NAS、SAN)について理解する
+ - HDDとSSDの違いについて理解する
 
-### 基本操作
+---
+
+## 
 
 - **コピー・ペースト**：`Ctrl + C` / `Ctrl + V`不可、**右クリックで貼り付け**
 - **Switch・Router**
