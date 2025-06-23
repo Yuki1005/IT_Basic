@@ -1,6 +1,11 @@
 # Storage基礎
-
-1. [Storage概要](#anchor1)
+[1. Storage概要](#anchor1)
+[2. HDD Storage](#anchor2)
+[3. Storageアーキテクチャ](#anchor3)
+[4. TypeStorage](#anchor4)
+[5. SAN](#anchor5)
+[6. NAS](#anchor6)
+[7. フラッシュStorage](#anchor7)
 
 ## 担当
 ---
@@ -81,7 +86,7 @@
 
 
 ---
-
+<a id="anchor2"></a>
 ## 2. HDD Storage
 
 ### 種類
@@ -144,7 +149,7 @@ SSDはランダムアクセスも得意
   - `RAID5` ：パリティ1つ、1本のディスク障害に対応
  
 ---
-
+<a id="anchor3"></a>
 ## 3. Storageアーキテクチャ
 
 ### 構成要素
@@ -220,7 +225,7 @@ SSDはランダムアクセスも得意
 |接続先 | `FCスイッチ` `ネットワークスイッチ` `Server(直接接続の場合)` | 拡張筐体 |
 
 ---
-
+<a id="anchor4"></a>
 ## 4. Tape Storage
 
 ### Tape
@@ -318,7 +323,7 @@ SSDはランダムアクセスも得意
   - テープ保管の紛らわしさから解放される
 
 ---
-
+<a id="anchor5"></a>
 ## 5. SAN
 
 ### SANとDAS
@@ -387,7 +392,7 @@ SSDはランダムアクセスも得意
 
   
 ---
-
+<a id="anchor6"></a>
 ## 6. NAS
 
 ### NAS
