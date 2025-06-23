@@ -142,3 +142,27 @@
 ## 4.2 演習4_Advance
 
 - 冗長化させてください
+
+
+---
+
+## 5. 演習5_Basic
+- NASはLANに接続された何を提供するStorage
+  - ファイル共有
+
+- UNIX/LinuxとWindowsそれぞれで一般的に利用されるファイル共有用プロトコル
+  - UNIX/Linux  NFS
+  - Win  CIFS(SMB)
+
+- NASにおけるファイルの所有権は
+  - Storage側
+
+- WindowsからNASのStorage領域を何から確認するか
+  - ネットワークドライブのプロパティから
+
+- ブロックStorageとファイルStorageの両方の機能を有してStorage
+  - ユニファードStorage
+
+
+## 5.2 演習5_Advance
+- 
