@@ -1,6 +1,6 @@
 # Storage基礎
 
-1. Storage概要(#anchor1)
+1. [Storage概要](#anchor1)
 
 ## 担当
 ---
