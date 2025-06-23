@@ -19,25 +19,8 @@
 
 ## 1. Storage概要
 
-- **コピー・ペースト**：`Ctrl + C` / `Ctrl + V`不可、**右クリックで貼り付け**
-- **Switch・Router**
-  - Router：大きいほう（四角)   
-  - Switch：小さいほう（丸） 
-- **接続方法**
-  - Router：表の緑端子（小さい方）
-  - Switch：裏の上端子（大きい方）
-- **接続手順**
-  - Tera Term 起動 → **[シリアル]選択 → OK**
-  - Router：コードが出たら「NO」→ Passwordが出たら`Uniadex123` → `Router>` 表示でOK
-  - Switch：`Enter` → `Switch>` 表示でOK
-- **Tera Term 設定**
-  - 設定 → シリアルポート(S)：
-    - 速度：9600
-    - データ：8bit
-    - パリティ：none
-    -ストップビット：1bit
-    - フロー制御：none
-    - 送信遅延：10, 20
+### Storageとは
+- Storage：データを置く場所（倉庫）、HDD、SSDなど
 
 ---
 
