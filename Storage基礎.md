@@ -1,11 +1,18 @@
 # Storage基礎
 [1. Storage概要](#anchor1)
+
 [2. HDD Storage](#anchor2)
+
 [3. Storageアーキテクチャ](#anchor3)
+
 [4. TypeStorage](#anchor4)
+
 [5. SAN](#anchor5)
+
 [6. NAS](#anchor6)
+
 [7. フラッシュStorage](#anchor7)
+
 
 ## 担当
 ---
