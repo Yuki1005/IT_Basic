@@ -170,9 +170,12 @@
 
 役割や責任の分担を定義したもの
 
+<br>
+
 |名|例え|特徴|代表的なサービス|
 |----|---|------|------|
-|SaaS|コンビニでお弁当を買う|HWリソースをインターネット経由で利用できる|`Microsoft Azure` `Amazon Web Services`|
+|SaaS|コンビニでお弁当を買う|業務用SWの機能をインターネット経由でサービスとして利用できる|`Zoom` `BOX`|
 |PaaS|スーパーで買ってきた材料で作る|AppやDB実行用のプラットフォームをインターネット経由で利用できる|`Google App Engine` `Salesforce Platform`|
-|IaaS|土地を借りて自分で育てた材料で作る|業務用SWの機能をインターネット経由でサービスとして利用できる|`Zoom` `BOX`|
+|IaaS|土地を借りて自分で育てた材料で作る|HWリソースをインターネット経由で利用できる|`Microsoft Azure` `Amazon Web Services`|
+
 
