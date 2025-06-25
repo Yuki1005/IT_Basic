@@ -15,8 +15,9 @@
 - Cloud Computingの正式名称
 - インターネット経由で必要な時必要な分だけ利用することができる `自分で用意する必要がない`
 
-| Microcoft | Microsoft Azure|
+| 事業社| 名|
 | --- | -----|
+| Microcoft | Microsoft Azure|
 |Amazon | Amazon Web Services|
 |Google | Google Cloud|
 
