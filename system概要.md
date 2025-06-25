@@ -53,10 +53,11 @@
 
 客先要件（RFP/提案依頼書)
 
-graph TD;
-A-->B;
-A-->C;
-B-->D;
-C-->D;
+<pre>
+.
+├── xxx
+├── xxx
+└── README.md
+</pre>
 
 - `基本設計`：
