@@ -31,6 +31,8 @@
     - DB：`SQL Server` `Orade`
     - OS：`Windows` `Linux` `MacOS`
     - ミドルウェア：`バックアップSW` `監視SW` `ジョブ管理`
+  - その他：
+    - 設置場所：`DC` `クラウド`
 
 ---
 
