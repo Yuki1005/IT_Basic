@@ -1,8 +1,8 @@
 ## Server仮想化
 
-[1. Serverの仮想化とは](#1.Serverの仮想化とは)
+[1. Serverの仮想化とは](#Serverの仮想化とは)
 
-[2. VMware製品によるServer仮想化](#2.VMware製品によるServer仮想化)
+[2. VMware製品によるServer仮想化](#VMware製品によるServer仮想化)
 
 - 藤本さん　仮想化オンプレ/Cloud設計構築 
 - 村上さん　仮想化オンプレ/Cloud設計構築 -> バックアップSW
@@ -23,7 +23,7 @@
 
 ---
 
-### 1.Serverの仮想化とは
+### Serverの仮想化とは
 
 - コンピュータリソースをSWで抽象化して論理的に利用する技術
 - リソースの柔軟性、SW上からのコンポーネント一元管理など自由度の大幅向上が見込める
@@ -84,5 +84,5 @@
  
 ---
 
-### 2.VMware製品によるServer仮想化
+### VMware製品によるServer仮想化
   - 
