@@ -34,7 +34,8 @@
 <br>
 
 - `Hypervisor`：物理マシンのHWリソースを抽象化し、複数のOSがリソースを共有して利用できるよう管理するSW
-  - 主なServer仮想化製品(当社はすべて取り扱い有)：`ESXi(VMware社)` `Hyper-V(Windows OS標準機能)` `AHV(Nutanix社)` `HVM(HPE社 Ubuntu(Linux)KVM)`
+  - 主なServer仮想化製品(当社はすべて取り扱い有)：
+  - `ESXi(VMware社)` `Hyper-V(Windows OS標準機能)` `AHV(Nutanix社)` `HVM(HPE社 Ubuntu(Linux)KVM)`
 
 #### 物理マシンとAppの構成（一般的）
 
