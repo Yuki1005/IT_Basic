@@ -1,7 +1,7 @@
 ## Server仮想化
 
 
-[2. VMware製品によるServer仮想化](#2. VMware製品によるServer仮想化)
+[2. VMware製品によるServer仮想化](#2.VMware製品によるServer仮想化)
 
 - 藤本さん　仮想化オンプレ/Cloud設計構築 
 - 村上さん　仮想化オンプレ/Cloud設計構築 -> バックアップSW
